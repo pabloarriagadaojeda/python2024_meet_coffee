@@ -68,3 +68,13 @@ footer {
 .logo-estudio img{
     height: 125px;
 }
+
+#quieroContacto a {
+    color: white;
+    text-decoration: none;
+}
+
+#quieroContacto a:hover {
+    color: white;
+    text-decoration: none;
+}

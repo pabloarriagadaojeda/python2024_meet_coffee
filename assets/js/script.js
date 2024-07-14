@@ -1,9 +1,10 @@
 $(document).ready(function () {
 
-    /* Alerta al enviar el mensaje */
-    $("#enviarCorreo").click(function () {
-        alert("Mensaje enviado correctamente, te estaremos contactando pronto. ÂĄBuen dÃ­a!");
+    /* Alerta al enviar el mensaje 
+    $("#quieroContacto").click(function () {
+        alert("De momento nos puedes contactar por WhatsApp a +56935970787");
     });
+    */
     
     /* Mostrar los textos en la secciÃģn de presentaciÃģn */
     $(".icono").on("click", function () {
