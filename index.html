@@ -4,77 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet & Coffee - Python 2024</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="shortcut icon" type="image/png" href="./assets/img/favicon.png" />
-    <meta name="author" content="Desafío Latam">
-    <meta name="description" content="Comparte tus conocimientos tomando café">
-    <meta name="keywords" content="charlas, eventos, simposios, tecnología, co-work">
+    <title>EstudioPA | Arquitectura</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.ico" type="image/x-icon">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--Bootstrap v5.3.3-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--Font Awesome 6.5.2-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <ul>
-            <li><a href="#"><img src="assets/img/coffee-cup.svg" width="50" /></a></li>
-            <li><a href="#">Ubicación</a></li>
-            <li><a href="#">Próxima charla</a></li>
-            <li><a href="#">Eventos anteriores</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
+    <!--Barra de navegación-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#" target="_blank">
+                <img src="assets/img/pa-transparente.png" alt="Logo" height="24" class="d-inline-block align-text-top">
+                EstudioPA
+            </a>
 
-    <header>
-        <h1>Descubre lo último en tecnología bebiendo café</h1>
-        <h3>Charlas, eventos y simposios sobre tecnología</h3>
-    </header>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <section>
-        <img src="assets/img/we-work.jpg" width="300" />
-        <h2>¿Dónde nos juntamos?</h2>
-        <p>
-            Todos los martes y viernes, de 19:00 a 22:00 en We Work, Calle Baker
-            133, Providencia, Santiago.
-        </p>
-    </section>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#presentacion">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#destacados">Nuestros servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contactame">Contacto</a>
+                    </li>
+                </ul>
 
-    <section id="Proxima-Charla">
-        <div class="wrapper">
-            <img src="assets/img/speaker.jpg" />
-            <div class="texto">
-                <h3>Próxima charla</h3>
-                <h4>Big Data para Noobs</h4>
-                <h6>Big Data para Noobs</h6>
-                <span>
-                    Data Scientist, PhD Theoretical Physics, Carneige Mellon
-                    University.
-                </span>
-                <p>
-                    En esta charla revisaremos las técnicas y tecnologías que hacen
-                    que sea económico hacer frente a los datos a una escala extrema.
-                </p>
             </div>
         </div>
-    </section>
+    </nav>
 
-    <section>
-        <h2>Eventos anteriores</h2>
-        <article>
-            <img src="assets/img/simposio-vegan.jpg" alt="Simposio Vegan">
-            <h3>Simposio VeganDB</h3>
-        </article>
-        <article>
-            <img src="assets/img/machine-learning.jpg" alt="Machine Learning 101">
-            <h3>Machine Learning 101</h3>
-        </article>
-        <article>
-            <img src="assets/img/scrum-sin-scream.jpg" alt="Scrum sin Scream">
-            <h3>Scrum sin Scream</h3>
-        </article>
-    </section>
+    <!--Carrusel-->
+    <header>
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/img/3_EXTERIOR.png" class="d-block w-100 carousel-img" alt="Carousel 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/1_EXTERIOR.png" class="d-block w-100 carousel-img" alt="Carousel 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/INTERIOR 3.png" class="d-block w-100 carousel-img" alt="Carousel 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/INTERIOR 6.png" class="d-block w-100 carousel-img" alt="Carousel 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/img/INTERIOR 7.png" class="d-block w-100 carousel-img" alt="Carousel 3">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="p-5 mb-4 rounded-3">
+                    <div class="container-fluid py-5">
+                        <h1 class="display-5 fw-bold">EstudioPA | Arquitectura</h1>
+                        <p class="col-md-8 fs-4">Hacemos realidad tus sueños, escuchamos tus ideas y las plasmamos en tu nuevo hogar o negocio</p>
+                        <button class="btn btn-primary btn-lg" type="button">Quiero contactarme</button>
+                    </div>
+                </div>
+            </div>
+            <div class="logo-estudio col-md-4 d-flex justify-content-center align-items-center">
+                <img src="assets/img/LOGO PNG.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!--Presentación-->
+    <div class="container mt-5 text-center" id="presentacion">
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="assets/img/1_CARWASH.png" class="rounded-circle img-placeholder" width="140" height="140"
+                    alt="Placeholder">
+                <h2 class="fw-normal">Diseño</h2>
+                <p>Te asesoramos para concretar tu proyecto soñado, ya sea tu nuevo hogar o una idea de negocio</p>
 
-    <footer>
-        <p>Meet & coffee 2024. Todos los derechos reservados.</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="assets/img/2_DOM.jpg" class="rounded-circle img-placeholder" width="140" height="140"
+                    alt="Placeholder">
+                <h2 class="fw-normal">Especificación</h2>
+                <p>Te ayudamos a cuantificar los materiales para tener control sobre la obra</p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+                <img src="assets/img/2_DOM.jpg" class="rounded-circle img-placeholder" width="140" height="140"
+                    alt="Placeholder">
+
+                <h2 class="fw-normal">Tramitación</h2>
+                <p>Tramitamos tu proyecto ante la DOM para obtener patentes comerciales</p>
+            </div><!-- /.col-lg-4 -->
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="text-center text-lg-start">
+        <div class="container d-flex justify-content-between py-3">
+            <div class="align-self-center">
+                <h3 class="text-white">EstudioPA</h3>
+            </div>
+            <div>
+                <a href="https://github.com/pabloarriagadaojeda/Portafolio/" target="_blank" class="text-white mx-2"
+                    data-bs-toggle="tooltip" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/pablo-arriagada-ojeda-4326b2139/" target="_blank"
+                    class="text-white mx-2" data-bs-toggle="tooltip" title="LinkedIn"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/estudiopa.arq/" target="_blank" class="text-white mx-2"
+                    data-bs-toggle="tooltip" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
     </footer>
+
+    <!--Bootstrap v5.3.3-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!--JQuery 3.7.1-->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <!--JavaScript-->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
